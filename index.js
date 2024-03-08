@@ -1,12 +1,17 @@
 // const passElement = document.getElementById('pass').value;
 const decodeButton = document.querySelector('.btn').onclick = function startDecode() {
 
-        while (i = passElement.value) {
-            alert( i )
-            i++
-            break
-        }
+        // while (i < 10000) {
+        //     if( i === passElement.value)
+        //     alert( i )
+        //     i++
+        //     break
+        // }
+    let i = 0
+if (i < passElement.value) {i++}
+if (i = passElement.value) alert( i )
     }
+
 
 
 
