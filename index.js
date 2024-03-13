@@ -1,7 +1,28 @@
-// const passElement = document.getElementById('pass').value;
-const decodeButton = document.querySelector('.btn').onclick = function startDecode() {
+let passElement = document.getElementById('pass');
+decodeButton = document.querySelector('.btn').addEventListener('click', function() {
 
-    // let i = 0
+        for(let i = 100; i <= passElement.value; i++) {
+            if(i < passElement.value) continue;
+            alert(i);
+            return;
+        }
+        if(isNaN(passElement)) alert('false');
+        if(passElement.value < 100) alert ('to short');
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        // let i = 0
     // while (i < 10000) {
     //     if( i == passElement.value) {
     //         alert(i);
@@ -9,13 +30,3 @@ const decodeButton = document.querySelector('.btn').onclick = function startDeco
     //     } 
     //     i = i + 1;
     // }
-        for(let i = 110; i <= passElement.value; i++) {
-            if(i < passElement.value) continue;
-            alert(i)
-
-        }  
-    }
-
-
-
-    passElement = document.getElementById('pass');
