@@ -1,15 +1,40 @@
-// const passElement = document.getElementById('pass').value;
-const decodeButton = document.querySelector('.btn').onclick = function startDecode() {
+import decode from "./decode.js";
 
-        while (i = passElement.value) {
-            alert( i )
-            i++
-            break
-        }
-    }
+let passElement = document.getElementById('pass');
+let i = 0;
 
 
+const buttomdecode = document.querySelector('#btn');
 
-let i = 0
-    passElement = document.getElementById('pass');
+buttomdecode.addEventListener('click',() => decode(passElement));
 
+
+
+
+
+
+
+
+
+
+
+
+
+        // let i = 0
+    // while (i < 10000) {
+    //     if( i == passElement.value) {
+    //         alert(i);
+    //         break;
+    //     } 
+    //     i = i + 1;
+    // }
+    // {
+
+    //     for(let i = 100; i <= passElement.value; i++) {
+    //         if(i < passElement.value) continue;
+    //         alert(i);
+    //         return;
+    //     }
+    //     if(isNaN(passElement)) alert('false');
+    //     if(passElement.value < 100) alert ('to short');
+    // }
